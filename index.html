@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: url('assets/bg penguin.jpg') center center fixed;
+            background-size: cover;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #btn-alert {
+            border: none;
+            border-radius: 5px;
+            padding: 7px 10px;
+            background-color: rgb(118, 240, 218);
+            font-size: 1.3em;
+            color: #000000;
+            cursor: pointer;
+            transition: width 2s, height 2s, transform 2s;
+            position: fixed;
+            left: 45%;
+            top: 45%;
+        }
+
+        #btn-alert:hover {
+            opacity: 0.8;
+        }
+
+        #btn-alert:focus {
+            outline: rgb(0, 0, 0) slateblue 3px;
+            outline-offset: 3px;
+        }
+
+        @media (max-width: 576px) {
+            #btn-alert {
+                left: 38%;
+            }
+        }
+    </style>
+
+    <title>Untuk PENGUIN 2023</title>
+</head>
+
+<body>
+
+    <button id="btn-alert" onclick="munculinAlert()">Klik untuk lihat ada pesan apa!</button>
+
+    <script>
+        async function munculinAlert() {
+            await Swal.fire('Haii Pengurus Inti LDM 2023😎🤟')
+            await Swal.fire('Bagaimana kabarnya setelah usai setahun ini 🤧??')
+            await Swal.fire('Alhamdulillah wa tabarakallahh')
+            await Swal.fire({
+                title: 'Part 1',
+                text: 'Kita telah melewati salah satu scene dalam hidup kita, susah, senang, sedih, haru, gembira, dan semua rasa telah dicicipi bersama',
+                imageUrl: 'assets/penguin 1.jpg',
+                imageWidth: 400,
+                imageHeight: 300,
+            })
+            await Swal.fire({
+                title: 'Part 2',
+                text: 'Seluruh langkah muslim adalah dakwah, ada kalanya berjalan santai, berlari kecil, ataupun marathon',
+                imageUrl: 'assets/penguin 2.jpg',
+                imageWidth: 400,
+                imageHeight: 300,
+            })
+            await Swal.fire({
+                title: 'Part 3',
+                text: 'Satu hal yang penting adalah, jangan biarkan kakimu terluka karena akan menghambat atauh bahkan menghentikan perjalanan dakwahmu.',
+                imageUrl: 'assets/penguin 3.jpg',
+                imageWidth: 400,
+                imageHeight: 300,
+            })
+            await Swal.fire({
+                title: 'Part 4',
+                text: 'Maka pastikanlah langkahmu tidak terhenti, istirahat seperlunya dan kita sama² gapai tujuan mulia syurga Allah yang indah',
+                imageUrl: 'assets/penguin 4.jpg',
+                imageWidth: 400,
+                imageHeight: 300,
+            })
+            await Swal.fire('selamat mengarugi Samudera kehidupan yang selanjutnyaa 🌊⛵🙂')
+           
+        }
+    </script>
+
+</body>
+
+</html>
